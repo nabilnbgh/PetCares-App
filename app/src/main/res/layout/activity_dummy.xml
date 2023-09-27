@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dummy.DummyActivity">
+    <fragment
+        android:id="@+id/dummyMaps"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="16dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginVertical="3dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/startDestiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/shape_textinput_normal"
+                android:ems="10"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center_vertical"
+                android:maxHeight="50dp"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Lokasi Anda"
+                android:textColor="@color/black" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/endDestiText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:background="@drawable/shape_textinput_normal"
+                android:ellipsize="end"
+                android:ems="10"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center_vertical"
+                android:maxHeight="50dp"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Titik Akhir"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:strokeColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_dummy_card"
+            >
+
+            <TextView
+                android:id="@+id/layananDummyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Layanan Antar Hewan"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122" />
+
+            <TextView
+                android:id="@+id/hargaDummyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="IDR 20.000"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/font_color2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.122" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/layananDummyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_blue_small"
+                android:fontFamily="@font/rubik_regular"
+                android:paddingHorizontal="10dp"
+                android:textAllCaps="false"
+                android:text="Pesan Layanan"
+                android:textColor="@color/white"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.843" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

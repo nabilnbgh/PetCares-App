@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vaccinedetailnav_graph"
+    app:startDestination="@id/vaccineMapsFragment">
+
+    <fragment
+        android:id="@+id/vaccineReviewFragment"
+        android:name="com.example.petcare.vaccinedetail.VaccineReviewFragment"
+        android:label="fragment_vaccine_review"
+        tools:layout="@layout/fragment_vaccine_review" >
+        <action
+            android:id="@+id/action_vaccineReviewFragment_to_vaccineMapsFragment"
+            app:destination="@id/vaccineMapsFragment" />
+        <action
+            android:id="@+id/action_vaccineReviewFragment_to_vaccinePriceFragment"
+            app:destination="@id/vaccinePriceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vaccinePriceFragment"
+        android:name="com.example.petcare.vaccinedetail.VaccinePriceFragment"
+        android:label="fragment_vaccine_price"
+        tools:layout="@layout/fragment_vaccine_price" >
+        <action
+            android:id="@+id/action_vaccinePriceFragment_to_vaccineMapsFragment"
+            app:destination="@id/vaccineMapsFragment" />
+        <action
+            android:id="@+id/action_vaccinePriceFragment_to_vaccineReviewFragment"
+            app:destination="@id/vaccineReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/vaccineMapsFragment"
+        android:name="com.example.petcare.vaccinedetail.VaccineMapsFragment"
+        android:label="fragment_vaccine_maps"
+        tools:layout="@layout/fragment_vaccine_maps" >
+        <action
+            android:id="@+id/action_vaccineMapsFragment_to_vaccineReviewFragment"
+            app:destination="@id/vaccineReviewFragment" />
+        <action
+            android:id="@+id/action_vaccineMapsFragment_to_vaccinePriceFragment"
+            app:destination="@id/vaccinePriceFragment" />
+    </fragment>
+</navigation>

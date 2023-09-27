@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.EditProfileActivity"
+    android:background="@color/background_color1">
+
+    <TextView
+        android:id="@+id/userProfileTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Profil Pengguna"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameInputForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="emailAddress"
+        android:background="@drawable/shape_textinput_normal"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+
+
+        android:textColor="@color/black"
+        android:textColorHint="@color/font_color2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="No Telp"
+        android:textColor="@color/black"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInputForm" />
+
+    <EditText
+        android:id="@+id/telnumberInputForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="phone"
+        android:background="@drawable/shape_textinput_normal"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:hint="No telepon"
+        android:inputType="phone"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/font_color2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileTitleText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveProfileButton"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+</androidx.constraintlayout.widget.ConstraintLayout>

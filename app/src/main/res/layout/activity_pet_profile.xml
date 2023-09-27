@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.EditProfileActivity"
+    android:background="@color/background_color1">
+
+    <TextView
+        android:id="@+id/petProfileTitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Profil Hewan Peliharaan"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.143"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Nama Hewan"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petProfileTitleText" />
+
+    <EditText
+        android:id="@+id/nameInputForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="35dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="name"
+        android:background="@drawable/shape_textinput_normal"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/font_color2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/petWeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Berat Badan Hewan"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameInputForm" />
+
+    <EditText
+        android:id="@+id/petWeightTextInput"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_textinput_normal"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/font_color2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petWeightText" />
+
+    <TextView
+        android:id="@+id/bbMetricText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Kg"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/petWeightTextInput"
+        app:layout_constraintTop_toTopOf="@+id/petWeightTextInput" />
+
+    <TextView
+        android:id="@+id/petHeightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Tinggi Badan Hewan"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petWeightTextInput" />
+
+    <TextView
+        android:id="@+id/petImageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Avatar Hewan"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petHeightTextInput" />
+
+    <EditText
+        android:id="@+id/petHeightTextInput"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_textinput_normal"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:inputType="number"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/font_color2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petHeightText" />
+
+    <TextView
+        android:id="@+id/tbMetricText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Cm"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@+id/petHeightTextInput"
+        app:layout_constraintTop_toTopOf="@+id/petHeightTextInput" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/savePetProfileButton"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/petAvatarRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/petImageText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

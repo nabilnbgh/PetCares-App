@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:strokeColor="@color/primaryColor"
+    app:strokeWidth="2dp"
+>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/petNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text=""
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/primaryColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/calendarDetailText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:maxLines="3"
+            android:fontFamily="@font/poppins_regular"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed magna ullamcorper, aliquam turpis nec, hendrerit diam. Integer tellus nulla, tempor convallis convallis eu, vehicula at augue. Nullam eget cursus ligula. Vestibulum in pretium quam, vitae mollis neque. Nunc id mattis dui, et egestas tortor. Curabitur molestie a leo nec iaculis. Sed mauris ante, sodales vitae dolor vitae, tempus fermentum justo. Aenean aliquam enim nec ipsum eleifend eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            android:textColor="@color/primaryColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/timeText"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/petNameText"
+            app:layout_constraintTop_toBottomOf="@+id/petNameText" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/primaryColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.952"
+            app:layout_constraintStart_toEndOf="@+id/petNameText"
+            app:layout_constraintTop_toTopOf="@+id/petNameText" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

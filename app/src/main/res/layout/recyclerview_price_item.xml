@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/deskripsiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detailDeskripsi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="20dp"
+        android:maxLines="5"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed magna ullamcorper, aliquam turpis nec, hendrerit diam. Integer tellus nulla, tempor convallis convallis eu, vehicula at augue. Nullam eget cursus ligula. Vestibulum in pretium quam, vitae mollis neque. Nunc id mattis dui, et egestas tortor. Curabitur molestie a leo nec iaculis. Sed mauris ante, sodales vitae dolor vitae, tempus fermentum justo. Aenean aliquam enim nec ipsum eleifend eleifend. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hargaText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/deskripsiText"
+        app:layout_constraintTop_toBottomOf="@+id/deskripsiText" />
+
+    <TextView
+        android:id="@+id/hargaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toEndOf="@+id/deskripsiText"
+        app:layout_constraintTop_toTopOf="@+id/deskripsiText" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".entry.EntryActivity"
+    android:background="@color/background_color1">
+
+    <ImageView
+        android:id="@+id/logoApp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/textEntry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar untuk menggunakan PetCare"
+        android:textColor="@color/font_color1"
+        android:textSize="18dp"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoApp"
+        app:layout_constraintVertical_bias="0.054" />
+
+
+    <EditText
+        android:id="@+id/emailInputForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:layout_marginHorizontal="35dp"
+        android:autofillHints="name"
+        android:elevation="10dp"
+        android:ems="10"
+        android:background="@drawable/shape_textinput_normal"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEntry"
+        app:layout_constraintVertical_bias="0.106" />
+
+
+    <EditText
+        android:id="@+id/usernameInputForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:layout_marginHorizontal="35dp"
+        android:autofillHints="name"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:background="@drawable/shape_textinput_normal"
+        android:gravity="center_vertical"
+        android:hint="Nama"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailInputForm"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <EditText
+        android:id="@+id/passwordInputForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:minWidth="48dp"
+        android:layout_marginHorizontal="35dp"
+        android:autofillHints="password"
+        android:background="@drawable/shape_textinput_normal"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center_vertical"
+        android:hint="Kata Sandi"
+        android:inputType="textPassword"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameInputForm"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/registerButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_blue"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputForm"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_italic"
+        android:text="Sudah punya akun? Masuk di sini!"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton"
+        app:layout_constraintVertical_bias="0.087" />
+
+    <TextView
+        android:id="@+id/errorRegisterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email sudah terdaftar gunakan email lain"
+        android:fontFamily="@font/poppins_bold"
+        android:visibility="invisible"
+        android:textColor="@color/errorColor"
+        app:layout_constraintEnd_toEndOf="@+id/signinText"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/signinText"
+        app:layout_constraintTop_toBottomOf="@+id/signinText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
